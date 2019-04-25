@@ -1,0 +1,47 @@
+//
+create database epups_db;
+\c epups_db;
+
+CREATE TABLE IF NOT EXISTS users(
+	user_id SERIAL PRIMARY KEY,
+	name VARCHAR(15) NOT NULL,
+	age SMALLINT NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	household SMALLINT NOT NULL,
+	img_src VARCHAR(200)[]
+	dogs INT[]
+);
+
+CREATE TABLE IF NOT EXISTS dogs(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(25) NOT NULL,
+	temperament VARCHAR(50),
+	size VARCHAR(10),
+	age_months SMALLINT NOT NULL,
+	breed VARCHAR(50),
+	sex VARCHAR(1) NOT NULL,
+	user_id INT[],
+  	fee SMALLINT,
+  	img_src VARCHAR(200)
+);
+
+
+INSERT INTO users(name, age, email, household)
+VALUES('Bella Conte', 22, 'isco3651@colorado.edu', 3),
+('Andres Lau', 22, 'andres.lau@colorado.edu', 4);
+
+INSERT INTO dogs(name, age_months, sex, size, fee, breed)
+VALUES('Alley', 2, 'F', 'small', 299, 'Miniature Schnauzer Mix'),
+('Benjamin', 36, 'M', 'large', 19, 'American Foxhound Mix'),
+('Betty', 24, 'F', 'medium', 149, 'Australian Shepherd Mix'),
+('Bo', 2, 'M', 'small', 299, 'Miniature Schnauzer Mix'),
+('Bowie', 8, 'M', 'medium', 149, 'American Pit Bull Terrier Mix'),
+('Brody', 2, 'M', 'small', 299, 'Miniature Schnauzer Mix'),
+('Buster', 60, 'M', 'medium', 79, 'Hound Mix'),
+('Caleb', 24, 'M', 'large', 149, 'Dutch Shepherd Mix'),
+('Chewy', 48, 'F', 'large', 99, 'American Pit Bull Terrier Mix'),
+('Chiba', 72, 'F', 'small', 79, 'Short Coat Chihuahua Mix'),
+('Christopher Robin', 7, 'M', 'medium', 99, 'American Put Bull Terrier Mix'),
+('Cowboy', 3, 'M', 'small', 299, 'Labrador Retriever Mix'),
+('Dee Dee', 12, 'F', 'large', 79, 'American Pit Bull Terrier / Labrador Retriever'),
+('Diego', 60, 'M', 'large', 79, 'American Bulldog');

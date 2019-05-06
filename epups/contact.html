@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ePups</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="jumbotron jumbotron-fluid" style="background-color:#FFB659">
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-2'>
+                    	<a href="profile.html"><button type="button" class="btn btn-outline-dark btn-sm"><img src="contact_img/epup_log_small.png" alt=epup_log style="width:20px;height:20px;">Profile</button></a>
+                    </div>
+
+                    <div class='col-sm-4'>
+                    <h1 class="display-4">Dog Book</h1>
+                	</div>
+
+                </div>
+                <p class="lead">The contact book lists the recent 5 dogs you liked.</p>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <table class="table table-bordered" id="contact_table">
+
+
+                <tr>
+                    <th class="align-bottom" >Dogs</th>
+                    <th class="align-bottom" >Contact Info</th>
+                </tr>
+
+                <tr>
+                	<td width="30%"><img src="contact_img/epup_log_small.png" alt="" border=1 height=150 width=150></img>dog_name</td>
+                	<td width="70%"> contact_info </td>
+                </tr>
+
+                <tr>
+                  <td width="30%"><img src="contact_img/epup_log_small.png" alt="" border=1 height=150 width=150></img>dog_name</td>
+                  <td width="70%"> contact_info </td>
+                </tr>
+
+                <br>
+                <br>
+                </table>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- <script>
+        	//create table and fill table with the data from databas
+            for(var i = 1; i <=5 ; i++)
+            {
+            	var dogimg = 'contact_img/epup_log_small.png'; //getDog_img()
+            	var dogname = 'Dog' + i; //getDog_name()
+            	var contactinfo = 'Dog' + i + 'info'; //getContact_info()
+
+                document.getElementById('contact_table').innerHTML += '<tr><td><img src="' + dogimg + '" alt="dog_img" border=1 height=150 width=150></img>' + dogname + '</td><td>' + contactinfo +'</td></tr>';
+            }
+        </script> -->
+
+
+    </body>
+</html>

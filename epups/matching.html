@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ePups</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript" src="./login.js"></script>
+	<script type="text/javascript" src="./switch.js"></script>
+	<style type="text/css">.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    width: 200px;
+    height: 200px;
+}
+
+.carousel-control .glyphicon-chevron-left:before,
+.carousel-control .glyphicon-chevron-right:before {
+    font-size: 200px;
+}
+
+
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <!-- <a class="navbar-brand" href="home.html">
+		<img class="rounded-circle" src="../resources/img/cu_boulder_logo.jpg" alt="" width="30" height="30">
+	  </a> -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="profile.html">Profile</a>
+		  </li>
+
+		  <li class="nav-item">
+			<a class="nav-link" href="matching.html">Match <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact.html">Contact</a>
+		  </li>
+		</ul>
+		<div class="form-inline my-2 my-lg-0">
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="home()">Logout</button>
+		</div>
+	  </div>
+	</nav>
+<div class="container-full-bg">
+	<div class="jumbotron" align="center">
+		<form class="form" action="/matching/get_dog" method="get" style="width: 50rem;">
+				<img class="card-img-top" src="img/waco.jpg" alt="Card image cap" id="dog_pic">
+  			<button class="btn btn-danger bt-lg" name="dog_choice" onclick="this.form.submit()">
+  				Dislike
+  			</button>
+  			<button class="btn btn-success bt-lg">
+  				Like
+  			</button>
+  			
+ 			<div class="card-body">
+    		<h1 class="card-title">Card title</h1>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+  			</div>
+		</form>
+  			
+	</div>	
+</div>
+
+
+</body>
+</html>

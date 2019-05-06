@@ -3,11 +3,12 @@
 Description of Application: ePup
 
 Inspired by Tinders functionality (Tinder for finding dogs)
--Looking for users who would like to find a rescue dog
--Users will also have to supply some background information
--Each dog will have some description
-*User can like or dislike a dog based on photo and description  
-*Rescue shelters have the option to reject or accept potential owners
+
+Looking for users who would like to find a rescue dog
+Users will also have to supply some background information
+Each dog will have some description
+User can like or dislike a dog based on photo and description  
+Rescue shelters have the option to reject or accept potential owners
 
 Purpose & Value:
   *Platform to facilitate the adoption process

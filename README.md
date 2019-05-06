@@ -29,7 +29,8 @@ Repo Organization:
 Describe where to find and/or how to build the docs 
  - The group created shared folder through Google Drive to access all our documents, presentations, and notes
  - Google Drive is how we created all documents to be handed in
- - The Milestones, as mentioned prior.
+ - The Milestones, as mentioned prior, are in the Milestone repo link, given on the last Milestone submission
+ - TO FIND FINAL PROJECT: Under the Milestone Repo.
  - Find: We have uploaded our code to this github repository and can be downloaded. We have the necessary html files, javascript, imgs, etc. saved in our code folder. 
  - Build: Once downloaded, to build the app just open one of the html files in the view folder
   and the rest of the html files can be accessed via the nav bar.
@@ -38,4 +39,3 @@ Describe how to build/run/test/etc code
  - Build/run: Once downloaded, to build the app just open one of the html files in the view folder
   and the rest of the html files can be accessed via the nav bar.
  - One can see our test cases via this github repository.
- - 
